@@ -55,6 +55,7 @@ func (c *Collector) Run(interval int) error {
 	}
 
 	for _, container := range containers {
+		// log.Printf("Container ID: %s\n", container.ID)
 		go c.handle(container.ID)
 	}
 

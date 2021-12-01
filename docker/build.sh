@@ -6,7 +6,7 @@ echo "APT::AutoRemove::RecommendsImportant false;" >> /etc/apt/apt.conf.d/recomm
 echo "APT::AutoRemove::SuggestsImportant   false;" >> /etc/apt/apt.conf.d/recommends.conf
 
 apt-get update
-apt-get install -y collectd git curl ca-certificates && \
+apt-get install -y collectd git curl ca-certificates vim apt iproute2 iputils-ping && \
 
 export GOLANG_VERSION="1.6"
 export GOLANG_DOWNLOAD_URL="https://golang.org/dl/go${GOLANG_VERSION}.linux-amd64.tar.gz"
